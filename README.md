@@ -7,7 +7,7 @@ How to use:
 
 - Upload wp-version.php to your WordPress root installation
 - Include the IP address of your Nagios installation in the script
-- Copy check\_wp\_update to your Nagios plugins folder. For me, it's on /usr/lib64/nagios/plugins
+- Copy "check_wp" to your Nagios plugins folder. For me, it's on /usr/lib64/nagios/plugins
 - Create a service command template
 - Create a service check on your host
 
