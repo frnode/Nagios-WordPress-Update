@@ -14,9 +14,10 @@ How to use:
 __Command Template__
 
 	define command{
-	        command_name    check_wp
-	        command_line    $USER1$/check_wp $ARG1$
-	        }
+        command_name    check_wp
+        command_line    $USER1$/check_wp $ARG1$
+	}
+
 
 __Service Check__
 
