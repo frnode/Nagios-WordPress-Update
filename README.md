@@ -31,3 +31,5 @@ __Service Check__
 	}
 
 Inspired by check\_wp\_version by @hteske. Original [here](http://exchange.nagios.org/directory/Plugins/CMS-and-Blog-Software/Wordpress/check_wp_version/details)
+
+Version modified by @nodefr to be compatible with [nagios-wp-check-comments](https://github.com/frnode/nagios-wp-check-comments)
