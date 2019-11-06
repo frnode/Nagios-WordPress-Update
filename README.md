@@ -21,10 +21,12 @@ __Command Template__
 __Service Check__
 
 	define service{
-	        use                     generic-service
-	        host_name               example.com
-	        service_description     My WordPress Install
-	        check_command           check_wp!http://example.com/wp-version.php
-	        }
+        max_check_attempts      8
+        host_name               wordpress
+        service_description     Wordpress_comments
+        check_command           check_wp!http://example.com/wp-version.php
+        check_interval          5
+        check_period            24x7
+}
 
 Inspired by check\_wp\_version by @hteske. Original [here](http://exchange.nagios.org/directory/Plugins/CMS-and-Blog-Software/Wordpress/check_wp_version/details)
