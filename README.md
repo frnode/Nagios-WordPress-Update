@@ -14,8 +14,8 @@ How to use:
 __Command Template__
 
 	define command{
-	        command_name    check_wp_update
-	        command_line    $USER1$/check_wp_update $ARG1$
+	        command_name    check_wp
+	        command_line    $USER1$/check_wp $ARG1$
 	        }
 
 __Service Check__
@@ -24,7 +24,7 @@ __Service Check__
 	        use                     generic-service
 	        host_name               example.com
 	        service_description     My WordPress Install
-	        check_command           check_wp_update!http://example.com/wp-version.php
+	        check_command           check_wp!http://example.com/wp-version.php
 	        }
 
 Inspired by check\_wp\_version by @hteske. Original [here](http://exchange.nagios.org/directory/Plugins/CMS-and-Blog-Software/Wordpress/check_wp_version/details)
